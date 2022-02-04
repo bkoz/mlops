@@ -3,9 +3,19 @@ mlops
 
 MLOps work
 
-Set the PYTHONPATH
+Example run commands:
 ```
 export PYTHONPATH=`pwd`/src/data
+```
+
+Train the model.
+```
+python src/models/train_model.py train
+```
+
+Display a random batch of images.
+```
+python src/visualizations/showimages.py
 ```
 
 Project Organization
