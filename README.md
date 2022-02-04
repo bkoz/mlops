@@ -3,6 +3,11 @@ mlops
 
 MLOps work
 
+Set the PYTHONPATH
+```
+export PYTHONPATH=`pwd`/src/data
+```
+
 Project Organization
 ------------
 
