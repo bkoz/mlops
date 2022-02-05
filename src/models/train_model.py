@@ -28,7 +28,7 @@ class TrainOREvaluate(object):
         parser.add_argument("command", help="Subcommand to run")
         args = parser.parse_args(sys.argv[1:2])
         if not hasattr(self, args.command):
-            logging.info('Unrecognized command')
+            logging.error('Unrecognized command.')
             
             parser.print_help()
             exit(1)
