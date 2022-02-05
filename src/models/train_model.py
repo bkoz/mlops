@@ -9,9 +9,6 @@ import numpy
 from data import mnist
 from model import MyAwesomeModel
 
-# sys.path.append('../')
-# import helper
-
 train_losses=[]
 train_accuracy=[]
 
@@ -39,6 +36,9 @@ class TrainOREvaluate(object):
         getattr(self, args.command)()
     
     def display(self, image, label):
+        """
+        Display an image and its label.
+        """
         logging.info(f'label = {label}')
         plt.imshow(image.squeeze(), cmap='Greys_r')
         # plt.savefig('fig.png')
@@ -57,6 +57,9 @@ class TrainOREvaluate(object):
         plt.show()
     
     def train(self):
+        """
+        Model training loop.
+        """
         logging.debug("Training loop")
         #
         # Add command line args
@@ -118,6 +121,9 @@ class TrainOREvaluate(object):
         self.plotLoss()
                         
     def evaluate(self):
+        """
+        Evaluate the model using a random image.
+        """
         logging.info("Evaluating until hitting the ceiling")
         parser = argparse.ArgumentParser(description='Training arguments')
         parser.add_argument('load_model_from', default="")
