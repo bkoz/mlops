@@ -54,6 +54,7 @@ class TrainOREvaluate(object):
         plt.ylabel('Loss')
         plt.legend(['Training'])
         plt.title('Training Loss')
+        plt.savefig('reports/figures/corruptnmist/training-loss.png')
         plt.show()
     
     def train(self):
