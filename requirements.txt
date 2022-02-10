@@ -1,4 +1,6 @@
 torch 
 torchvision 
 dvc
+"dvc[gdrive]"
+matplotlib
 
