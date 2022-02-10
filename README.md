@@ -1,7 +1,7 @@
 mlops
 ==============================
 
-MLOps work from the [DTU Course}(https://skaftenicki.github.io/dtu_mlops/)
+MLOps work from the [DTU Course](https://skaftenicki.github.io/dtu_mlops/)
 
 Example run commands:
 ```
