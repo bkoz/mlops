@@ -1,6 +1,6 @@
 torch 
 torchvision 
 dvc
-"dvc[gdrive]"
+dvc[gdrive]
 matplotlib
 
