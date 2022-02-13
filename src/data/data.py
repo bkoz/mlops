@@ -27,3 +27,23 @@ def mnist():
     test = torch.utils.data.DataLoader(testset, batch_size=64, shuffle=True)
 
     return train, test
+
+def loadNpz(filename):
+    """
+    Load an npz formatted test dataset from storage.
+    Returns an NPZ dataset.
+    """
+    #
+    # Define a transform to normalize the input data.
+    #
+    transform = transforms.Compose([transforms.ToTensor(),
+                                    transforms.ConvertImageDtype(torch.float),
+                                    transforms.Normalize((0.5,), (0.5,))
+                                ])
+
+    # Load the data
+    testset = NpzImageDataset(input_file=filename, transform=transform)
+    # print(f'{testset}') 
+    test = torch.utils.data.DataLoader(testset, batch_size=64, shuffle=True)
+
+    return test
