@@ -13,6 +13,11 @@ Train the model.
 python src/models/train_model.py train
 ```
 
+Test score a pre-trained model.
+```
+python src/models/predict_model.py models/corruptmnist/mnist.pt data/raw/corruptmnist/test.npz
+```
+
 Display a random batch of images.
 ```
 python src/visualizations/showimages.py
