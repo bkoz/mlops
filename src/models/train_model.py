@@ -117,7 +117,9 @@ class TrainOREvaluate(object):
 
         if args.save_model:
             logging.info(f'Saving model as mnist.pt')
-            torch.save(model.state_dict(), "models/corruptmnist/mnist.pt")
+            torch.save(model, "models/corruptmnist/mnist.pt")
+            logging.info(f'Saving model weights as mnist-weights.pt')
+            torch.save(model.state_dict(), "models/corruptmnist/mnist-weights.pt")
 
         self.plotLoss()
                         
