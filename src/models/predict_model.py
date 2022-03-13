@@ -6,16 +6,17 @@ import torch
 from torch import nn, optim
 import matplotlib.pyplot as plt
 import numpy
-from data import mnist
+from data import mnist, loadNpz
 from model import MyAwesomeModel
-from src.data.data import loadNpz
+# from src.data.data import loadNpz
 
 train_losses=[]
 train_accuracy=[]
 
 FORMAT='%(levelname)s %(asctime)s %(message)s'
 DATEFMT='%m/%d/%Y %I:%M:%S %p'
-logging.basicConfig(format=FORMAT, datefmt=DATEFMT, encoding='utf-8', level=logging.INFO)
+# logging.basicConfig(format=FORMAT, datefmt=DATEFMT, encoding='utf-8', level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
         
 class TrainOREvaluate(object):
     """ Helper class that will help launch class methods as commands
