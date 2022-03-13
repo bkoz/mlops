@@ -14,8 +14,9 @@ train_accuracy=[]
 
 FORMAT='%(levelname)s %(asctime)s %(message)s'
 DATEFMT='%m/%d/%Y %I:%M:%S %p'
-logging.basicConfig(format=FORMAT, datefmt=DATEFMT, encoding='utf-8', level=logging.INFO)
-        
+# logging.basicConfig(format=FORMAT, datefmt=DATEFMT, encoding='utf-8', level=logging.INFO)
+logging.basicConfig(level=logging.INFO)
+
 class TrainOREvaluate(object):
     """ Helper class that will help launch class methods as commands
         from a single script
