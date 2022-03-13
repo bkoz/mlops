@@ -20,7 +20,7 @@ python src/models/predict_model.py models/corruptmnist/mnist.pt data/raw/corrupt
 
 Display a random batch of images.
 ```
-python src/visualizations/showimages.py
+python src/visualization/showimages.py
 ```
 
 Project Organization
